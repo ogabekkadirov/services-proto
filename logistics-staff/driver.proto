@@ -3,13 +3,13 @@ syntax = "proto3";
 option go_package = "./logistics_staff";
 
 message DriverProfile {
-    string driver_id = 1 [json_name = "driver_id"];
-    string name = 2 [json_name = "name"];
-    string phone_number = 3 [json_name = "phone_number"];
-    string image_url = 4 [json_name = "image_url"];
-    bool active = 5 [json_name = "active"];
-    string created_at = 6 [json_name = "created_at"];
-    string updated_at = 7 [json_name = "updated_at"];
+ string driver_id = 1 [json_name = "driver_id"];
+ string name = 2 [json_name = "name"];
+ string phone_number = 3 [json_name = "phone_number"];
+ string image_url = 4 [json_name = "image_url"];
+ bool active = 5 [json_name = "active"];
+ string created_at = 6 [json_name = "created_at"];
+ string updated_at = 7 [json_name = "updated_at"];
 }
 message RegisterDriverRequest {
     string phone_number = 1 [json_name = "phone_number"];
