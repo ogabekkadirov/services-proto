@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option go_package = "./logistics_dispatching";
+
+import "driver_status.proto";
+import "order.proto";
+
+service DispatchingService {
+    rpc TrackDriverLocation(TrackDriverLocationRequest) returns (TrackDriverLocationResponse);
+    rpc ListDriverLocation(ListDriverLocationRequest) returns (ListDriverLocationResponse);
+    rpc UpdateDriverStatus(UpdateDriverStatusRequest) returns (UpdateDriverStatusResponse);
+    rpc GetDriverStatus(GetDriverStatusRequest) returns (GetDriverStatusResponse);
+    // order
+    rpc UpdateOrder(UpdateOrderRequest) returns (UpdateOrderResponse);
+    rpc PickupOrder(PickupOrderRequest) returns (PickupOrderResponse);
+    rpc DeliverOrder(DeliverOrderRequest) returns (DeliverOrderResponse);
+    rpc CompleteOrder(CompleteOrderRequest) returns (CompleteOrderResponse);
+    rpc GetOrder(GetOrderRequest) returns (GetOrderResponse);
+    rpc ListOrder(ListOrderRequest) returns (ListOrderResponse);
+}
