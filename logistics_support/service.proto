@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+option go_package = "github.com/ogabekkadirov/services-proto/logistics_support";
+package logistics_support;
+import "rating.proto";
+
+service SupportService {
+    rpc GetRating(GetRatingRequest)returns (GetRatingResponse);
+}

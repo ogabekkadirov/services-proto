@@ -1,6 +1,7 @@
 syntax = "proto3";
 
-option go_package = "./eater";
+option go_package = "github.com/ogabekkadirov/services-proto/eater";
+package eater;
 
 message PaymentCardView {
   string id = 1 [json_name = "id"];

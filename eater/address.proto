@@ -1,6 +1,8 @@
 syntax = "proto3";
 
-option go_package = "./eater";
+option go_package = "github.com/ogabekkadirov/services-proto/eater";
+package eater;
+
 
 message Location {
   double longitude = 1 [json_name = "longitude"];
