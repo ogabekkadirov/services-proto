@@ -4,7 +4,7 @@ option go_package = "github.com/ogabekkadirov/services-proto/logistics_vehicle";
 
 package logistics_vehicle;
 
-import "vehicle.proto";
+import "logistics_vehicle/vehicle.proto";
 
 service VehicleService {
   rpc CreateVehicle(CreateVehicleRequest) returns (CreateVehicleResponse);

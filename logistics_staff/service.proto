@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option go_package = "github.com/ogabekkadirov/services-proto/logistics_staff";
 package logistics_staff;
-import "driver.proto";
+import "logistics_staff/driver.proto";
 
 service StaffService {
     rpc RegisterDriver (RegisterDriverRequest) returns (RegisterDriverResponse);

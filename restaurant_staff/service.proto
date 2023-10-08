@@ -2,7 +2,7 @@ syntax = "proto3";
 
 option go_package = "github.com/ogabekkadirov/services-proto/restaurant_staff";
 package restaurant_staff;
-import "manager.proto";
+import "restaurant_staff/manager.proto";
 
 service StaffService {
   rpc RegisterManager (RegisterManagerRequest) returns (RegisterManagerResponse);

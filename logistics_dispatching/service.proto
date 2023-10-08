@@ -4,8 +4,8 @@ option go_package = "github.com/ogabekkadirov/services-proto/logistics_dispatchi
 
 package logistics_dispatching;
 
-import "driver_status.proto";
-import "order.proto";
+import "logistics_dispatching/driver_status.proto";
+import "logistics_dispatching/order.proto";
 
 service DispatchingService {
     rpc TrackDriverLocation(TrackDriverLocationRequest) returns (TrackDriverLocationResponse);

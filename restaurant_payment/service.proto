@@ -3,8 +3,8 @@ option go_package = "github.com/ogabekkadirov/services-proto/restaurant_payment"
 
 package restaurant_payment;
 
-import "merchant.proto";
-import "payment.proto";
+import "restaurant_payment/merchant.proto";
+import "restaurant_payment/payment.proto";
 
 service RestaurantPayment {
     rpc UpdateMerchantSetting(UpdateMerchantSettingRequest) returns (UpdateMerchantSettingResponse);
